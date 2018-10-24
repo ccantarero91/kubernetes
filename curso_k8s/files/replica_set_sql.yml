@@ -1,0 +1,26 @@
+apiVersion : apps/v1
+kind: ReplicaSet
+metadata:
+ name: myapp-rs
+ labels:
+   app: myapp
+   type: backend
+spec:
+ template:
+  metadata:
+   name: mysql
+   labels:
+    app: myapp
+    type: backend
+  spec:
+   containers:
+    - name: mysql
+      image: mysql
+      env:
+      - name: MYSQL_ROOT_PASSWORD
+        value: password
+ replicas: 4
+ selector:
+  matchLabels:
+   app: myapp
+   type: backend

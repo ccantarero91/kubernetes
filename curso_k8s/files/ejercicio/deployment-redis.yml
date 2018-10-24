@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+ name: redis-deployment
+ labels:
+  app: demo-voting-app
+  tier: redis-db
+spec:
+ replicas: 1
+ template:
+  metadata:
+   name: redis
+   labels:
+    app: pod-redis
+    tier: db-redis
+  spec:
+   containers:
+    - name: redis
+      image: redis
+      ports:
+       - containerPort: 6379
+ selector:
+  matchLabels:
+   app: pod-redis
+   tier: db-redis
