@@ -1,0 +1,848 @@
+yum install -y git
+yum install -y curl
+yum install -y yum-utils       device-mapper-persistent-data       lvm2
+yum-config-manager     --add-repo     https://download.docker.com/linux/centos/docker-ce.repo
+yum install -y docker-ce-17.06.1.ce
+systemctl start docker
+systemctl enable docker
+cat <<EOF > /etc/yum.repos.d/kubernetes.repo
+   [kubernetes]
+   name=Kubernetes
+   baseurl=https://packages.cloud.google.com/yum/repos/kubernetes-el7-x86_64
+   enabled=1
+   gpgcheck=1
+   repo_gpgcheck=1
+   gpgkey=https://packages.cloud.google.com/yum/doc/yum-key.gpg    https://packages.cloud.google.com/yum/doc/rpm-package-key.gpg
+EOF
+
+yum install -y kubectl
+cat <<EOF > /etc/yum.repos.d/kubernetes.repo
+   [kubernetes]
+   name=Kubernetes
+   baseurl=https://packages.cloud.google.com/yum/repos/kubernetes-el7-x86_64
+   enabled=1
+   gpgcheck=1
+   repo_gpgcheck=1
+   gpgkey=https://packages.cloud.google.com/yum/doc/yum-key.gpg    https://packages.cloud.google.com/yum/doc/rpm-package-key.gpg
+EOF
+
+yum install -y kubectl
+export PATH=$PATH:/usr/local/bin
+cat <<EOF > /etc/yum.repos.d/kubernetes.repo
+   [kubernetes]
+   name=Kubernetes
+   baseurl=https://packages.cloud.google.com/yum/repos/kubernetes-el7-x86_64
+   enabled=1
+   gpgcheck=1
+   repo_gpgcheck=1
+   gpgkey=https://packages.cloud.google.com/yum/doc/yum-key.gpg    https://packages.cloud.google.com/yum/doc/rpm-package-key.gpg
+EOF
+
+yum install -y kubectl
+export PATH=$PATH:/usr/local/bin
+cat <<EOF > /etc/yum.repos.d/kubernetes.repo
+   [kubernetes]
+   name=Kubernetes
+   baseurl=https://packages.cloud.google.com/yum/repos/kubernetes-el7-x86_64
+   enabled=1
+   gpgcheck=1
+   repo_gpgcheck=1
+   gpgkey=https://packages.cloud.google.com/yum/doc/yum-key.gpg    https://packages.cloud.google.com/yum/doc/rpm-package-key.gpg
+EOF
+
+yum install -y kubectl
+cat <<EOF > /etc/yum.repos.d/kubernetes.repo
+   [kubernetes]
+   name=Kubernetes
+   baseurl=https://packages.cloud.google.com/yum/repos/kubernetes-el7-x86_64
+   enabled=1
+   gpgcheck=1
+   repo_gpgcheck=1
+   gpgkey=https://packages.cloud.google.com/yum/doc/yum-key.gpg    https://packages.cloud.google.com/yum/doc/rpm-package-key.gpg
+EOF
+
+yum install -y kubectl
+systemctl enable docker
+export PATH=$PATH:/usr/local/bin
+cat <<EOF > /etc/yum.repos.d/kubernetes.repo
+   [kubernetes]
+   name=Kubernetes
+   baseurl=https://packages.cloud.google.com/yum/repos/kubernetes-el7-x86_64
+   enabled=1
+   gpgcheck=1
+   repo_gpgcheck=1
+   gpgkey=https://packages.cloud.google.com/yum/doc/yum-key.gpg    https://packages.cloud.google.com/yum/doc/rpm-package-key.gpg
+EOF
+
+yum install -y kubect
+cat <<EOF > /etc/yum.repos.d/kubernetes.repo
+   [kubernetes]
+   name=Kubernetes
+   baseurl=https://packages.cloud.google.com/yum/repos/kubernetes-el7-x86_64
+   enabled=1
+   gpgcheck=1
+   repo_gpgcheck=1
+   gpgkey=https://packages.cloud.google.com/yum/doc/yum-key.gpg    https://packages.cloud.google.com/yum/doc/rpm-package-key.gpg
+EOF
+
+yum install -y kubectl
+#Install Minikube 
+curl -Lo minikube https://storage.googleapis.com/minikube/releases/v0.30.0/minikube-linux-amd64 && chmod +x minikube && sudo cp minikube /usr/local/bin/ && rm -f minikube
+minikube start --vm-driver=none
+cat <<EOF > /etc/yum.repos.d/kubernetes.repo
+[kubernetes]
+name=Kubernetes
+baseurl=https://packages.cloud.google.com/yum/repos/kubernetes-el7-x86_64
+enabled=1
+gpgcheck=1
+repo_gpgcheck=1
+gpgkey=https://packages.cloud.google.com/yum/doc/yum-key.gpg https://packages.cloud.google.com/yum/doc/rpm-package-key.gpg
+EOF
+
+yum install -y kubectl
+minikube restart
+kubectl run hello-minikube --image=k8s.gcr.io/echoserver:1.10 --port=8080
+kubectl expose deployment hello-minikube --type=NodePort
+curl $(minikube service hello-minikube --url)
+export PATH=$PATH:/usr/local/bin
+minikube restart
+curl $(minikube service hello-minikube --url)
+kubectl get pods
+vi .bashrc 
+vi .bashrc 
+docker images
+kubctl run nginx
+kubectl run nginx
+kubectl run nginx --image nginx
+kubectl get pods
+docker images
+docker ps
+docker ps | grep nginx
+kubectl get pods
+kubectl describe pod nginx-65899c769f-fl9m4
+kubectl describe pod nginx-65899c769f-fl9m4 | less -C
+ll
+vi sql.iml
+mv sql.iml sql.yml
+cat sql.yml 
+vi sql.yml 
+vi sql.yml 
+kubectl create -f sql.yml 
+vi sql.yml 
+vi sql.yml 
+kubectl create -f sql.yml 
+vi sql.yml 
+kubectl get pods
+vi sql.yml 
+yum install -y vim
+vi .bashrc 
+vi /etc/vimrc 
+vi sql.yml 
+vim sql.yml 
+source .bashrc 
+vi sql.yml 
+kubectl get pods
+kubectl describe pod mysql
+:q
+vim sql.yml 
+vim sql.yml 
+vi sql.yml 
+kubectl get pods
+vim sql.yml 
+kubectl get pods
+vim sql.yml 
+vim sql.yml 
+kubectl delete pod mysql
+kubectl get pods
+cp sql.yml replica_set_sql.yml
+vim replica_set_sql.yml 
+kubectl create -f replica_set_sql.yml 
+vim replica_set_sql.yml 
+vim replica_set_sql.yml 
+kubectl create -f replica_set_sql.yml 
+vim replica_set_sql.yml 
+kubectl create -f replica_set_sql.yml 
+vim replica_set_sql.yml 
+kubectl create -f replica_set_sql.yml 
+vim replica_set_sql.yml 
+kubectl create -f replica_set_sql.yml 
+vim replica_set_sql.yml 
+kubectl create -f replica_set_sql.yml 
+vim replica_set_sql.yml 
+kubectl create -f replica_set_sql.yml 
+vim replica_set_sql.yml 
+kubectl create -f replica_set_sql.yml 
+vim replica_set_sql.yml 
+kubectl create -f replica_set_sql.yml 
+vim replica_set_sql.yml 
+kubectl get pod
+kubectl describe pod myapp-rc-h4k6z
+vim replica_set_sql.yml 
+kubectl delete pod myapp-rc-h4k6z
+kubectl get pod 
+kubectl describe pod myapp-rc-jdzxk
+kubectl get replica_set_sql.yml 
+kubectl get replicaSet
+vi replica_set_sql.yml 
+vi, replica_set_sql.yml 
+vim replica_set_sql.yml 
+vim replica_set_sql.yml 
+kubectl describe replicaset
+kubectl remove replicaset
+ kubectl run hello-minikube --image=k8s.gcr.io/echoserver:1.10 --port=8080
+curl $(minikube service hello-minikube --url)
+kubectl expose deployment hello-minikube --type=NodePort
+curl $(minikube service hello-minikube --url)
+minikube start
+minikube start --vm-driver=none
+curl -Lo minikube https://storage.googleapis.com/minikube/releases/v0.30.0/minikube-linux-amd64 && chmod +x minikube && sudo cp minikube /usr/local/bin/ && rm -f minikube
+minikube start --vm-driver=none
+minikube start --vm-driver=none
+minikube start --vm-driver=none
+sudo su
+kubectl get replicaset
+kubecetl remove replicaset myapp-rc
+kubectl remove replicaset myapp-rc
+kubectl delete replicaset myapp-rc
+kubectl get replicaset
+kubectl get pods
+vi replica_set_sql.yml 
+vim replica_set_sql.yml 
+ll
+source .bashrc 
+vi replica_set_sql.yml 
+kubectl create -f replica_set_sql.yml 
+kubectl get pods
+kubectl get deploymets
+kubectl get deployments
+kubectl scale --replicas=5 replicaset myapp
+kubectl get replicaset
+kubectl scale --replicas=5 replicaset myapp-rs
+kubectl get pods
+vi replica_set_sql.yml 
+kubectl replace -f replica_set_sql.yml 
+kubectl get pods
+ll
+cp replica_set_sql.yml replica_set_nginx.yml 
+vi replica_set_nginx.yml 
+kubectl create replica_set_nginx.yml 
+kubectl create -f replica_set_nginx.yml 
+vi replica_set_nginx.yml 
+kubectl create -f replica_set_nginx.yml 
+kubectl get replicaset
+kubectl get pods
+kubectl scale --replicas=1 replicaset myapp-rs-frontend
+kubectl get pods
+kubectl scale --replicas=1 replicaset myapp-rs
+kubectl get pods
+kubectl get pods
+kubectl get pods
+kubectl get pods
+kubectl get pods
+kubectl delete pod nginx-65899c769f-fl9m4
+kubectl get pods
+kubectl get pods
+ll
+cp replica_set_nginx.yml deployment_nginx.yml
+vi deployment_nginx.yml
+kubectl -f deployment_nginx.yml 
+kubectl create -f deployment_nginx.yml 
+kubectl get deployments
+kubectl get pods
+vi deployment_nginx.yml
+kubectl apply -f deployment_nginx.yml 
+kubectl get replicaset
+kubectl rollout history desployment/myapps
+kubectl rollout history desployment/myapp
+kubectl rollout history desployment/myapp-rs-frontend
+kubectl rollout history myapp-rs-frontend
+kubectl rollout history deployment/myapp-rs-frontend
+vi deployment_nginx.yml
+kubectl apply -f deployment_nginx.yml --record=htrue
+kubectl apply -f deployment_nginx.yml --record=true
+kubectl get replicaset
+kubectl get replicaset
+kubectl rollout history deployment/myapp-rs-frontend
+kubectl rollout undo deployment/myapp-rs-frontend 2
+kubectl rollout undo deployment/myapp-rs-frontend --to-revision=2
+kubectl get replicaset
+kubectl rollout history deployment/myapp-rs-frontend
+kubectl rollout undo deployment/myapp-rs-frontend --to-revision=3 --record=true
+kubectl rollout undo deployment/myapp-rs-frontend --to-revision=3 --record=true
+kubectl rollout history deployment/myapp-rs-frontend
+kubectl rollout undo deployment/myapp-rs-frontend --to-revision=3
+kubectl rollout history deployment/myapp-rs-frontend
+kubectl get replicaset
+kubectl get pod 
+kubectl describe pod myapp-rs-frontend-6fd78d866c-cvpqt
+vi deployment_nginx.yml 
+kubectl get deplyment
+kubectl get deployment
+kubectl rollout history 
+ll
+cp deployment_nginx.yml deployment_redis.yml
+vi deployment_redis.yml
+vi deployment_redis.yml
+kubectl create -f deployment_redis.yml 
+kubectl get deployment
+kubectl get pod
+kubectl describe deployment myapp-redis
+vi deployment_redis.yml
+kubectl get 
+kubectl get replicaset
+kubectl rollout history deployment/myapp-redis
+kubectl describe deployment myapp-redis
+kubectl get replicaset
+kubectl rollout history deployment/myapp-redis
+kubectl rollout undo deployment/myapp-redis --to-revision=1
+kubectl get replicaset
+kubectl get replicaset
+kubectl describe deployment myapp-redis
+kubectl rollout history deployment/myapp-redis
+kubectl get deployment
+kubectl delete deployment nginx
+kubectl get deployment
+kubectl get replicaset
+kubectl get deployment
+kubcetl delete deplyoment hello-minikube
+kubctl delete deplyoment hello-minikube
+kubectl delete deplyoment hello-minikube
+kubectl delete deployment hello-minikube
+kubectl get deployment
+kubectl delete deployment myapp-redis
+kubectl delete deployment myapp-rs-frontend
+kubectl get deployment
+kubectl get pod
+kubectl get pod
+kubectl get pod
+kubectl get pod
+kubectl delete pod myapp-rs-w7q5f
+kubectl get pod
+kubectl get replicaset
+kubectl delete replicaset myapp-rs
+kubectl get replicaset
+kubectl get pod
+kubectl
+kubectl get pods
+ll
+vi sql.yml 
+vi service-definition.yml 
+kubectl create -f service-definition.yml 
+vim service-definition.yml 
+kubectl create -f service-definition.yml 
+kubectl get services
+curl http://192.168.1.2:30008
+kubectl describe service myapp-service
+ifconfig
+curl http://localhost:30008
+curl http://172.31.13.28:30008
+vim service-definition.yml 
+vim service-definition.yml 
+mv service-definition.yml teacher-service-definition.yml 
+curl http://172.31.13.28:30008
+ifconfig
+curl http://172.17.0.1:80
+curl http://172.17.0.1:30008
+kubectl get service
+curl http://172.17.0.1:30008
+vim teacher-service-definition.yml 
+vim nginx.yml 
+vim nginx.yml 
+vim teacher-service-definition.yml 
+kubectl get services
+kubectl delete services myapp-service
+kubectl create -f teacher-service-definition.yml 
+kubectl get services
+curl http://172.17.0.1:30008
+vim teacher-service-definition.yml 
+ll
+mv teacher-service-definition.yml nginx-service-definition.yml
+ll
+mv nginx.yml pod-nginx.yml
+ll
+vim pod-nginx.yml 
+ll
+cp sql.yml nginx.yml
+vi nginx.yml 
+vim nginx.yml 
+kubectl create -f nginx.yml 
+kubectl get pod
+kubectl describe pod mynginx
+cat nginx.yml 
+vi pod_nginx.yml
+ll
+vi service-definition.yml
+vim service-definition.yml
+kubectl get pod
+kubectl describe pod mynginx
+vim service-definition.yml 
+ll
+cat replica_set_nginx.yml 
+vi pod_nginx.yml
+vim nginx.yml 
+mkdir ejercicio
+cp deployment_nginx.yml ejercicio/
+cd ejercicio/
+cp deployment_nginx.yml deployment_votacion.yml
+vim deployment_votacion.yml 
+vim deployment_votacion.yml 
+mv deployment_votacion.yml deployment-postgres.yml
+ll
+kubectl create -f deployment-postgres.yml
+kubectl get deployment
+vim deployment-postgres.yml 
+kubectl apply -f deployment-postgres.yml
+kubectl get deployment
+kubectl delete deployment postgres
+kubectl get deployment
+vim deployment-postgres.yml 
+vim deployment-redis.yml
+kubectl get deployment
+kubectl remove deployment deployment-postgres
+kubectl create -f deployment-postgres.yml 
+kubectl create -f deployment-postgres.yml 
+kubectl create -f deployment-redis.yml 
+vim service-redis.yml
+cp service-redis.yml service-postgres.yml
+vim service-postgres.yml 
+cat service-postgres.yml 
+cat deployment-postgres.yml 
+kubectl get deployment
+kubectl remove deployment deployment-postgres
+kubectl delete deployment deployment-postgres
+kubectl get deployment
+kubectl create -f service-postgres.yml 
+vim service-postgres.yml 
+vim service-postgres.yml 
+vim service-postgres.yml 
+cat service-postgres.yml 
+kubectl get service
+kubectl get deployments
+kubectl delete deployment postgres-deployment redis-deployment
+kubectl get deployments
+kubectl create -f deployment-postgres.yml 
+kubectl create -f service-postgres.yml 
+vim deployment-redis.yml 
+vim deployment-redis.yml 
+cat deployment-redis.yml
+cat sql.yml 
+ll
+cd ejercicio/
+cat deployment-postgres.yml 
+vim deployment-postgres.yml 
+cat deployment-postgres.yml 
+less deployment-postgres.yml 
+cat service-postgres.yml 
+vim deployment-postgres.yml 
+vim service-redis.yml 
+vim service-postgres.yml 
+kubectl crate deployment-redis.yml 
+kubectl create deployment-redis.yml 
+kubectl create -f deployment-redis.yml 
+kubectl create -f service-redis.yml 
+kubectl get deployment
+kubectl get service
+kubectl describe service demo-voting-app
+kubectl get service
+kubectl delete service demo-voting-app
+vim service-postgres.yml 
+vim service-redis.yml 
+vim service-postgres.yml 
+vim service-redis.yml 
+kubectl get service
+kubectl delete service service-postgres
+kubectl get service
+kubectl create -f service-redis.yml 
+kubectl create -f service-postgres.yml 
+kubectl get service
+kubectl get deployment
+vim service-postgres.yml 
+diff service-postgres.yml service-redis.yml 
+cp deployment-postgres.yml deployment-voting.yml
+vim deployment-voting.yml 
+kubectl create deployment-voting.yml 
+kubectl create -f deployment-voting.yml 
+vim deployment-voting.yml 
+kubectl create -f deployment-voting.yml 
+vim deployment-voting.yml 
+kubectl create -f deployment-voting.yml 
+cp service-postgres.yml service-voting.yml
+vim service-voting.ym
+vim service-voting.yml
+vim deployment-redis.yml 
+vim deployment-redis.yml 
+kubectl apply -f deployment-redis.yml 
+kubectl get deployment
+kubectl describe deployment redis-deployment
+vim deployment-postgres.yml 
+kubectl apply -f deployment-postgres.yml 
+vim service-voting.yml 
+vim deployment-voting.yml 
+kubectl create -f deployment-voting.yml 
+kubectl apply -f deployment-voting.yml 
+kubectl describe deployment deployment-voting.yml 
+kubectl describe deployment deployment-voting
+kubectl get deployment
+kubectl describe deployment voting-deployment
+kubectl create -f service-voting.yml 
+vim service-voting.yml 
+kubectl create -f service-voting.yml 
+vim service-voting.yml 
+cp deployment-voting.yml deployment-resultados.yml
+vim deployment-resultados.yml 
+kubectl create -f deployment-resultados.yml 
+cp service-voting.yml service-resultados.yml
+vim service-resultados.yml
+kubectl create -f service-resultados.yml 
+cp deployment-postgres.yml deployment-worker.yml
+vim deployment-worker.yml 
+kubectl create -f deployment-worker.yml 
+vim service-redis.yml 
+kubectl get service 
+kubectl delete service service-redis service-postgres 
+kubectl create -f service-redis.yml 
+kubectl get service 
+vim service-postgres.yml 
+kubectl create -f service-postgres.yml 
+vim service-redis.yml 
+vim service-redis.yml 
+kubectl aplly -f service-redis.yml 
+kubectl aply -f service-redis.yml 
+kubectl aplly -f service-redis.yml 
+kubectl apply -f service-redis.yml 
+vim service-postgres.yml 
+kubectl apply -f service-redis.yml 
+kubectl apply -f service-postgres.yml 
+kubectl get deployments
+kubectl delete deployments postgres-deployment redis-deployment resultados-deployment voting-deployment worker-deployment
+kubectl get deployments
+kubectl get services
+kubectl delete services db mynginx-service redis service-resultados service-voting
+kubectl get services
+kubectl get pods
+kubectl delete pods mynginx
+pwd
+ll mnt
+ll /mnt
+ll /mnt/
+pwd
+ll
+mkir volumenes
+mkdir volumenes
+ll
+cd volumenes/
+mkdir volumePersist
+ll
+cd volumePersist/
+pwd
+cd ..
+ll
+pwd
+cd ..
+ll
+mkdir scp
+ll
+rm -r scp
+cd volumenes
+ññ
+ll
+cd ..
+chown centos:centos volumenes
+ll
+cd volumenes/
+l
+ll
+cd aplications/mysql/
+ll
+kubectl create mysql-pv.yaml 
+kubectl create -f mysql-pv.yaml 
+kubectl create -f mysql-deployment.yaml 
+kubectl describe deployment mysql
+ll /home/centos/volumenes/volumePersist/
+kubectl get pods app=mysql
+kubectl get pods -l app=mysql
+kubectl describe pvc mysql-pv-claim
+kubectl apply -f mysql-pv.yaml 
+kubectl get pods -l app=mysql
+kubectl describe pvc mysql-pv-claim
+kubectl describe pvc mysql-pv-claim
+kubectl get pods -l app=mysql
+kubectl describe pods -l app=mysql
+kubectl run -it --rm --image=mysql:5.6 --restart=Never mysql-client -- mysql -h mysql -ppassword
+kubectl apply mysql-deployment.yaml 
+kubectl apply -fmysql-deployment.yaml 
+kubectl apply -f mysql-deployment.yaml 
+kubectl get services
+kubectl run -it --rm --image=mysql:5.6 --restart=Never mysql-client -- mysql -h mysql -ppassword
+kubectl delete deployment,svc mysql
+kubectl delete pvc mysql-pv-claim
+kubectl delete pv mysql-pv-volume
+ll
+kubectl mysql-pv.yaml 
+kubectl create -f mysql-pv.yaml 
+kubectl create -f mysql-deployment.yaml 
+kubectl get pods -l app=wordpress
+mkdir /home/centos/volumenes/volumePersistWP
+cd ..
+cd wordpress/
+kubectl create -f wordpress-pv.yaml 
+  kubectl get pvc
+kubctl create -f wordpress-deployment.yaml 
+kubectl create -f wordpress-deployment.yaml 
+  kubectl get services wordpress
+  kubectl get services wordpress
+  kubectl get services wordpress
+  minikube service wordpress --url
+kubectl service wordpress --url
+kubectl get pods
+kubectl describe pod wordpress-7db7d65586-lnh7q
+kubectl apply -f wordpress-deployment.yaml 
+kubectl get pods
+kubectl get pods
+kubectl get pods
+  kubectl get services wordpress
+  minikube service wordpress --url
+kubectl get pods
+kubectl get pods
+kubectl get pods
+kubectl get pods
+kubectl get pods
+kubectl get pods
+kubectl get pods
+kubectl get pods
+kubectl descibe pod wordpress-746f48995-4p56v
+kubectl descibe pods wordpress-746f48995-4p56v
+kubectl describe pods wordpress-746f48995-4p56v
+kubectl get pods
+kubectl describe pods wordpress-746f48995-4p56v
+cd 
+ll
+kubectl apply -f mysql-deployment.yaml
+cd ../wordpress/
+kubectl apply -f wordpress-deployment.yaml 
+kubectl describe pods wordpress-746f48995-4p56v
+kubectl get pods
+kubectl describe pods wordpress-746f48995-j4
+kubectl describe pods wordpress-746f48995-j4n8z
+kubectl describe pods wordpress-6856d6475b-j4n8z
+  kubectl get pvc
+  kubectl delete deployment -l app=wordpress
+  kubectl delete service -l app=wordpress
+  kubectl delete pvc -l app=wordpress
+  kubectl get pvc
+  kubectl get pvc
+  kubectl get pvc
+  kubectl get pvc
+  kubectl get pvc
+  kubectl describe pvc mysql-pv-claim
+  kubectl get pvc
+  kubectl delete pvc mysql-pv-claim
+  kubectl get pvc
+pwd
+create mysql-pv.yaml 
+kubectl create -f mysql-pv.yaml 
+  kubectl get pvc
+  kubectl get pvc
+  kubectl delte pvc mysql-pv-claim
+  kubectl delete pvc mysql-pv-claim
+  kubectl delte pvc mysql-pv-claim
+  kubectl get pvc
+  kubectl get pv
+kubectl delete pv mysql-pv-volume wp-pv-volume
+  kubectl get pv
+  kubectl get pvd
+  kubectl get pvc
+  kubectl get pv
+kubectl delete pv mysql-pv-volume
+  kubectl get pv
+ll
+cd volumenes/
+ll
+rm -rf volumePersist volumePersistWP
+  kubectl get pv
+  kubectl delete pv mysql-pv-volume
+  kubectl get pv
+ll
+pwd
+cd ..
+ll
+pwd
+ll
+chown centos:centos *
+ll
+ll
+ll
+pwd
+rm -r volumenes/
+rm -rf volumenes/
+ll
+cd volumenes/
+ll
+kubectl create -f wordpress-pv.yaml 
+kubectl get pv
+kubectl create -f mysql-pv.yaml 
+kubectl get pv
+kubectl get pvc
+kubectl create -f wordpress-pvc.yaml 
+kubectl create -f mysql-pvc.yaml 
+kubectl get pvc
+kubectl create -f  mysql-deployment.yaml 
+kubectl get deployments
+kubectl get pods
+kubectl get deployments
+kubectl get pods
+kubectl delete pods mysql-569796bc46-9v26q
+kubectl get pods
+kubectl get deplomenst
+kubectl get deployments
+kubectl delete deployments mysql
+kubectl get pods
+kubectl get pvc
+kubectl get pv
+kubectl get pv
+kubectl get pods
+kubectl describe pods wordpress-mysql-59f86f7c7f-qnx2j
+kubectl create -f wordpress-deployment.yaml
+kubectl get pods
+kubectl describe pods wordpress-6896b84bc4-569qr
+kubectl get pods
+kubectl describe pods wordpress-6896b84bc4-569qr
+kubectl describe pods wordpress-6896b84bc4-569qr
+kubectl get pods
+kubectl describe pods wordpress-6896b84bc4-569qr
+kubectl logs podwordpress-6896b84bc4-569qr
+kubectl logs pod wordpress-6896b84bc4-569qr
+kubectl logs wordpress-6896b84bc4-569qr
+kubectl logs wordpress-6896b84bc4-569qr
+kubectl apply -f wordpress-deployment.yaml 
+kubectl get pods
+kubectl get pods
+kubectl get pods
+kubectl get pods
+kubectl describe pods wordpress-6896b84bc4-569qr
+kubectl describe pods wordpress-6896b84bc4-569qr
+kubectl get pods
+kubectl describe pods wordpress-6d5b9b8767-vtz4d
+kubectl describe logs wordpress-6d5b9b8767-vtz4d
+kubectl logs wordpress-6d5b9b8767-vtz4d
+curl http://172.17.0.1:80
+kubectl get services
+kubectl get deployments
+kubectl delete deployments wordpress wordpress-mysql
+kubectl get services
+kubectl delete services wordpress wordpress-mysql
+kubectl get pods
+kubectl get pv
+kubectl delete pv mysql-pv-volume2 pvc-a0706210-d765-11e8-9ab0-0ac4e8d0bd52 pvc-a53383e6-d765-11e8-9ab0-0ac4e8d0bd52 wordpress-pv-volume
+kubectl get pvc
+kubectl delete pvc mysql-pv-claim2 wordpress-pv-claim
+kubectl get pv
+kubectl create secret generic mysql-pass --from-literal=password=YOUR_PASSWORD
+kubectl get secret
+kubectl remove secret mysql-pass
+kubectl delte secret mysql-pass
+kubectl delete secret mysql-pass
+kubectl create secret generic mysql-pass --from-literal=password=secret_password
+kubectl get deployment
+kubectl delete deployment wordpress wordpress-mysql
+cd secrets/
+kubectl create -f  mysql-deployment.yaml 
+kubectl create -f  wordpress-deployment.yaml 
+kubectl get deployment
+kubectl get pods
+cd namespaces/
+kubectl create -f tomcat-deployment.yaml 
+kubectl get deployments
+kubectl get pods
+kubectl get pods
+kubectl get pods
+kubectl get deployments
+kubectl delete deployments tomcat-deployment
+kubectl get deployments
+  kubectl delete pvc -l app=wordpress
+  kubectl delete deployments -l app=wordpress
+kubectl get pods
+kubectl get service
+  kubectl delete services -l app=wordpress
+  kubectl delete pvc -l app=wordpress
+  kubectl delete pv -l app=wordpress
+  kubectl get pvc
+  kubectl get pv
+  kubectl delete pv local-pv-1 local-pv-2
+  kubectl get pvc
+ll
+rm namespace.yaml 
+ll
+kubectl get namespaces
+kubectl create namespace tomcat-namespace
+kubectl create -f cpu-limits.yaml --namespace=tomcat-namespace
+kubectl get resourcequota
+kubectl get resource
+kubectl describe resourcequota/cpu-limits
+kubectl apply -f tomcat-deployment.yaml --namespace=tomcat-namespace
+kubectl describe deployment tomcat-deployment —namespace=cpu-limited-tomcat
+kubectl describe deployment tomcat-deployment —namespace=tomcat-namespace
+kubectl get deployments
+kubectl -create tomcat-deployment.yaml --namespace=tomcat-namespace
+kubectl create -f tomcat-deployment.yaml --namespace=tomcat-namespace
+kubectl get deployment --namespace=tomcat-namespace
+kubectl describe deployment --namespace=tomcat-namespace
+kubectl get deployment --namespace=tomcat-namespace
+kubectl get deployment tomcat-deployment --namespace=tomcat-namespace
+kubectl describe deployment tomcat-deployment --namespace=tomcat-namespace
+kubectl logs deployment tomcat-deployment --namespace=tomcat-namespace
+kubectl logs tomcat-deployment --namespace=tomcat-namespace
+kubectl get pods --namespace=tomcat-namespace
+kubectl log tomcat-deployment-775ff5576-bqz28
+kubectl logs tomcat-deployment-775ff5576-bqz28
+kubectl get pods --namespace=tomcat-namespace
+kubectl logs tomcat-deployment-775ff5576-bqz28 --namespace=tomcat-namespace
+kubectl logs tomcat-deployment-775ff5576-bqz28 -l app=tomcat --namespace=tomcat-namespace
+kubectl logs -l app=tomcat --namespace=to^Cat-namespace
+kubectl logs -l app=tomcat
+kubectl logs --namespace=tomcat-namespace
+kubectl get pods -l app=tomcat --namespace=tomcat-namespace
+kubectl get pods -l app=tomcat
+kubectl get pods -l app=tomcat --namespace=tomcat-namespace
+kubectl get pods -l app=tomcat1 --namespace=tomcat-namespace
+kubectl describe deployments -l app=tomcat1 --namespace=tomcat-namespace
+kubectl describe deployments --namespace=tomcat-namespace
+kubectl get deployments --namespace=tomcat-namespace
+kubectl delete deployments --namespace=tomcat-namespace
+kubectl delete deployments -l app=tomcat --namespace=tomcat-namespace
+minikube
+cat ../.bashrc 
+export PATH=$PATH:/usr/local/bin
+minikube 
+cd
+cp /home/centos/.bashrc .
+vi .bashrc 
+vi .bashrc 
+source .bashrc 
+minikube 
+vi .bashrc 
+source .bashrc 
+ll
+cd secrets/
+ll
+kubectl create -f local-volumes.yaml 
+kubectl create -f mysql-deployment.yaml 
+kubectl get deployments
+kubectl get pods
+kubectl get pods
+kubectl get deployments
+kubectl delete deployments wordpress-mysql
+kubectl create -f mysql-deployment.yaml 
+kubectl get deployments
+kubectl get pods
+kubectl logs wordpress-mysql-5dcffc6c5-zp7fp
+kubectl describe pods wordpress-mysql-5dcffc6c5-zp7fp
+kubectl apply -f mysql-deployment.yaml 
+kubectl get pods
+kubctl create -f wordpress-deployment.yaml 
+kubectl create -f wordpress-deployment.yaml 
+kubectl get pods
+kubectl get service
+ll /tmp/
+ll /tmp/data
+ll /tmp/data/
